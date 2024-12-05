@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   margin: 0;
   background: #0B0B0B;
@@ -20,50 +21,65 @@ a {
   text-decoration: none;
 }
 
-/* Hero Header */
-.hero-header {
+/* New Hero Section */
+.hero {
   position: relative;
-  height: 300px;
-  background: #000;
+  height: 400px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  overflow: hidden;
+  background: #0B0B0B;
 }
 
-.hero-gradient {
+.hero-bg {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 100px;
-  background: linear-gradient(to bottom, #0B0B0B 0%, transparent 100%);
+  height: 100%;
+  background: linear-gradient(to bottom, #14222e 0%, #0b0b0b 80%);
+  z-index: 1;
 }
 
-.hero-portrait {
+.hero-content {
   position: relative;
-  background: #111;
-  border-radius: 50%;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portrait-container {
   width: 120px;
   height: 120px;
-  margin-bottom: -60px;
+  background: #1c2a36;
+  border-radius: 20px;
+  margin: 0 auto 20px auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
 }
 
-.portrait-img {
+.portrait {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 10px;
   object-fit: cover;
 }
 
 .hero-name {
-  margin-top: 10px;
-  font-size: 1.1em;
-  text-align: center;
+  font-size: 2em;
+  margin: 0;
+  font-weight: 600;
+  color: #E0E0E0; /* Ensure visibility against dark background */
+}
+
+.hero-title {
+  font-size: 1.2em;
+  margin: 10px 0 0;
+  font-weight: 300;
+  color: #57b1e8;
 }
 
 /* Intro Section */
@@ -106,6 +122,7 @@ section > h2 {
   display: grid;
   gap: 20px;
 }
+
 .work-card {
   display: flex;
   background: #111;
@@ -114,15 +131,18 @@ section > h2 {
   align-items: center;
   gap: 20px;
 }
+
 .work-card-icon img {
   width: 50px;
   height: 50px;
   object-fit: contain;
 }
+
 .work-card-text h3 {
   margin-bottom: 10px;
   font-size: 1.2em;
 }
+
 .work-card-text p {
   margin: 0;
   font-size: 0.95em;
@@ -137,6 +157,7 @@ section > h2 {
   display: grid;
   gap: 20px;
 }
+
 .study-card {
   display: flex;
   background: #111;
@@ -144,14 +165,17 @@ section > h2 {
   border-radius: 15px;
   gap: 20px;
 }
+
 .study-card-icon img {
   width: 50px;
   height: 50px;
 }
+
 .study-card-text h3 {
   margin-bottom: 10px;
   font-size: 1.2em;
 }
+
 .study-card-text p {
   margin: 0;
   font-size: 0.95em;
@@ -167,6 +191,7 @@ section > h2 {
   gap: 40px;
   flex-wrap: wrap;
 }
+
 .maker-item {
   display: flex;
   flex-direction: column;
@@ -176,6 +201,7 @@ section > h2 {
   border-radius: 15px;
   width: 120px;
 }
+
 .maker-item img {
   width: 40px;
   height: 40px;
@@ -192,12 +218,14 @@ section > h2 {
   grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
   gap: 20px;
 }
+
 .project-card {
   background: #111;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
 }
+
 .project-card img {
   max-width: 100%;
   border-radius: 5px;
@@ -222,6 +250,7 @@ section > h2 {
   justify-content: center;
   margin-top: 40px;
 }
+
 .superpower-item {
   background: #111;
   padding: 20px;
@@ -229,6 +258,7 @@ section > h2 {
   width: 120px;
   text-align: center;
 }
+
 .superpower-item img {
   width: 40px;
   height: 40px;
@@ -258,11 +288,13 @@ section > h2 {
 .footer-links {
   margin: 20px 0;
 }
+
 .footer-links a {
   margin: 0 10px;
   color: #888;
   font-weight: 600;
 }
+
 .footer-links a:hover {
   color: #fff;
 }
