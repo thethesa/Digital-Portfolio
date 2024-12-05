@@ -58,7 +58,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 30px rgba(0,0,0,0.7);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
 .portrait {
@@ -215,7 +215,7 @@ section > h2 {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
 }
 
@@ -299,19 +299,100 @@ section > h2 {
   color: #fff;
 }
 
-/* Responsive adjustments */
+/* Top Bar */
+.top-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #000;
+  padding: 10px 20px;
+  border-radius: 0 0 0 20px;
+  z-index: 999;
+}
+
+.top-bar-icons a {
+  margin-left: 15px;
+  color: #C0C0C0;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.top-bar-icons a:hover {
+  color: #fff;
+}
+
+/* Story Section */
+.story-section {
+  padding: 100px 10%;
+  background: #0B0B0B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.text-column {
+  flex: 1 1 300px;
+  max-width: 600px;
+  color: #C0C0C0;
+}
+
+.mini-portrait-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.mini-portrait {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.story-name {
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: 600;
+  color: #E0E0E0;
+}
+
+.text-column p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.graphic-column {
+  flex: 1 1 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-graphic {
+  max-width: 300px;
+}
+
+/* Responsive adjustments for the story section */
 @media (max-width: 768px) {
-  .intro-section {
-    flex-direction: column;
-  }
-  .intro-content {
+  .story-content {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
-  .work-cards, .study-cards, .projects-grid, .superpowers-grid {
-    grid-template-columns: 1fr;
-  }
-  .maker-items {
-    justify-content: center;
+
+  .graphic-column {
+    margin-top: 40px;
   }
 }
