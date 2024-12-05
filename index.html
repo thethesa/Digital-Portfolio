@@ -3,50 +3,165 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Home - Digital Portfolio</title>
+<title>Aditya Nadhe - Portfolio</title>
 <link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <nav class="sidebar-left">
-        <h1>Your Name</h1>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul>
-    </nav>
 
-    <div class="main-content">
-        <div class="language-select">
-            <label for="language">Language:</label>
-            <select id="language">
-                <option value="en">English</option>
-                <option value="de">Deutsch</option>
-                <option value="fr">Français</option>
-                <option value="it">Italiano</option>
-                <option value="es">Español</option>
-            </select>
-        </div>
-        <h2>Welcome to my Digital Portfolio</h2>
-        <p>This portfolio showcases my skills, projects, and experience in Data Science and related fields.</p>
-        <p>Feel free to explore the pages and learn more about my work and background.</p>
-        <img src="your-image.jpg" alt="Your Picture" style="max-width:300px;"/><!-- Optional image -->
+<header class="hero-header">
+  <div class="hero-gradient"></div>
+  <div class="hero-portrait">
+    <img src="portrait.jpg" alt="Aditya Nadhe" class="portrait-img">
+    <h1 class="hero-name">Aditya Nadhe</h1>
+  </div>
+</header>
+
+<section class="intro-section">
+  <div class="intro-content">
+    <div class="intro-text">
+      <p>
+        I specialize in building some of the most creative digital experiences.  
+        I believe in the power of data and code to solve problems and tell stories.  
+        I am curious about emerging technologies and always try to push beyond the conventional boundaries.  
+        <br><br>
+        Work, Study, and creating is at the core of my professional and personal journey.
+      </p>
     </div>
+    <div class="intro-graphic">
+      <img src="hello-world-graphic.png" alt="Hello World Graphic">
+    </div>
+  </div>
+</section>
 
-    <aside class="sidebar-right">
-        <ul class="social-links">
-            <li><a href="#">Insta</a></li>
-            <li><a href="#">Threads</a></li>
-            <li><a href="#">GitLab</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </aside>
+<section class="work-section">
+  <h2>Work</h2>
+  <div class="work-cards">
+    <div class="work-card">
+      <div class="work-card-icon"><img src="icon-lanxess.png" alt="Lanxess"></div>
+      <div class="work-card-text">
+        <h3>Lanxess</h3>
+        <p>Short description about work at Lanxess. Achievements and role details go here.</p>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-card-icon"><img src="icon-accenture.png" alt="Accenture"></div>
+      <div class="work-card-text">
+        <h3>Accenture</h3>
+        <p>Short description about the project or role at Accenture.</p>
+      </div>
+    </div>
+    <!-- Add more work cards as needed -->
+  </div>
+</section>
 
-    <footer class="footer">
-        <p>Contact: <a href="mailto:youremail@example.com">youremail@example.com</a> | <a href="#">Instagram</a> | <a href="#">GitHub</a></p>
-    </footer>
-</div>
+<section class="study-section">
+  <h2>Study</h2>
+  <div class="study-cards">
+    <div class="study-card">
+      <div class="study-card-icon"><img src="icon-fhnw.png" alt="FHNW"></div>
+      <div class="study-card-text">
+        <h3>FHNW</h3>
+        <p>Jan 2019 - Dec 2019<br>Bachelor in Data Science</p>
+        <p>Focus: AI, Data Viz, Emerging Tech</p>
+      </div>
+    </div>
+    <div class="study-card">
+      <div class="study-card-icon"><img src="icon-something.png" alt="Some School"></div>
+      <div class="study-card-text">
+        <h3>Gymnasium Lörrach</h3>
+        <p>Jan 2012 - Jan 2015<br>High School</p>
+        <p>Focus: Mathematics, Physics, Economics</p>
+      </div>
+    </div>
+    <!-- Add more study cards as needed -->
+  </div>
+</section>
+
+<section class="maker-section">
+  <h2>Maker at heart.</h2>
+  <div class="maker-items">
+    <div class="maker-item">
+      <img src="icon-hardware.png" alt="Hardware">
+      <p>Hardware tinkering</p>
+    </div>
+    <div class="maker-item">
+      <img src="icon-3dprint.png" alt="3D Printing">
+      <p>3D Printing</p>
+    </div>
+    <div class="maker-item">
+      <img src="icon-robotics.png" alt="Robotics">
+      <p>Robotics</p>
+    </div>
+    <!-- Add more maker interests -->
+  </div>
+</section>
+
+<section class="projects-section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <!-- Each project card -->
+    <div class="project-card">
+      <img src="project-screenshot1.png" alt="Project 1">
+      <h3>Project One</h3>
+    </div>
+    <div class="project-card">
+      <img src="project-screenshot2.png" alt="Project 2">
+      <h3>Project Two</h3>
+    </div>
+    <div class="project-card">
+      <img src="project-screenshot3.png" alt="Project 3">
+      <h3>Project Three</h3>
+    </div>
+    <!-- Add more project cards -->
+  </div>
+</section>
+
+<section class="superpowers-section">
+  <h2>Superpowers</h2>
+  <p>
+    I consider all these skills and interests as 'creative energy units' that I harness to energize my work.  
+    From data wrangling to design, from coding to storytelling, these are the superpowers I bring to the table.
+  </p>
+  <div class="superpowers-grid">
+    <div class="superpower-item">
+      <img src="icon-data.png" alt="Data skill">
+      <p>Data Analytics</p>
+    </div>
+    <div class="superpower-item">
+      <img src="icon-ml.png" alt="ML skill">
+      <p>Machine Learning</p>
+    </div>
+    <div class="superpower-item">
+      <img src="icon-uiux.png" alt="UI/UX skill">
+      <p>UI/UX Design</p>
+    </div>
+    <!-- Add more superpowers -->
+  </div>
+</section>
+
+<section class="promo-section">
+  <h2>Become a SOLID Developer.</h2>
+  <p>
+    Learn how SOLID principles shape better code.  
+    Check out my tutorial series on YouTube.
+  </p>
+  <div class="video-container">
+    <!-- Example embed of a video -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2024 Aditya Nadhe</p>
+  <div class="footer-links">
+    <a href="#">N</a>
+    <a href="#">M</a>
+    <a href="#">F</a>
+  </div>
+  <p>Some tagline or a short phrase here.</p>
+</footer>
+
 </body>
 </html>
