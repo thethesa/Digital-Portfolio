@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    grid-template-areas:
+        "sidebar-left main sidebar-right"
+        "sidebar-left main sidebar-right"
+        "sidebar-left footer sidebar-right";
+}
+
+.sidebar-left {
+    grid-area: sidebar-left;
+    background: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar-left h1 {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: #007acc;
+}
+
+.main-content {
+    grid-area: main;
+    padding: 20px;
+}
+
+.sidebar-right {
+    grid-area: sidebar-right;
+    background: #f4f4f4;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.social-links a:hover {
+    color: #007acc;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    border-top: 1px solid #ccc;
+}
+
+.language-select {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.language-select label {
+    margin-right: 10px;
+}
+
+.project {
+    margin-bottom: 30px;
+}
